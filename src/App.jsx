@@ -11,13 +11,13 @@ function App() {
     <div className="flex h-screen w-screen flex-col justify-between">
       <nav className="nav flex">nav</nav>
       <section className="main relative flex flex-col items-center gap-4 self-center">
-        <img src={GoogleLogo} alt="Google Logo" className="h-24 w-72" />
-        <div className="mb-2 flex w-[30rem] items-center justify-between gap-1 rounded-full border border-black/20 px-2 focus:shadow-lg">
-          <IoMdSearch className="w-[1.2rem] text-black/40" />
+        <img src={GoogleLogo} alt="Google Logo" className="w-64" />
+        <div className="mb-2 flex w-[35rem] items-center justify-between gap-1 rounded-full border border-black/20 px-3 hover:shadow-lg">
+          <IoMdSearch className="mr-2 h-[1.2rem] w-[1.2rem] text-black/40" />
           <input
             type="text"
             placeholder=""
-            className="mr-0 flex-1 py-[0.55rem] outline-none"
+            className="mr-0 flex-1 py-[0.7rem] outline-none"
             onChange={(e) => setSearchInput(e.target.value)}
             onKeyDown={(e) => {
               if (e.key === "Enter") {
