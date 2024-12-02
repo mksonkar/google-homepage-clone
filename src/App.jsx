@@ -10,9 +10,9 @@ function App() {
   return (
     <div className="flex h-screen w-screen flex-col justify-between">
       <nav className="nav flex">nav</nav>
-      <section className="main relative flex flex-col items-center space-y-5 self-center">
+      <section className="main relative flex flex-col items-center gap-4 self-center">
         <img src={GoogleLogo} alt="Google Logo" className="h-24 w-72" />
-        <div className="flex w-[30rem] items-center justify-between gap-1 rounded-full border border-black/20 px-2 focus:shadow-lg">
+        <div className="mb-2 flex w-[30rem] items-center justify-between gap-1 rounded-full border border-black/20 px-2 focus:shadow-lg">
           <IoMdSearch className="w-[1.2rem] text-black/40" />
           <input
             type="text"
@@ -32,7 +32,7 @@ function App() {
             <img src={googleLens} alt="Google Lens" className="w-7" />
           </button>
         </div>
-        <div className="text-sm text-gray-700">
+        <div className="mb-2 text-sm text-gray-800">
           <button
             onClick={() =>
               (window.location.href = `https://www.google.com/search?q=${searchInput}`)
